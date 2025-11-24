@@ -2,8 +2,16 @@
 name = "debugging-q4"
 version = "0.1.0"
 description = "CCHC Assessment Debugging Q4"
-authors = [{ name = "", email = "" }]
+authors = [{ name = "Chaughn Robin", email = "chaughnr@outlook.com" }]
 readme = "README.md"
 requires-python = "<=3.11"
 dependencies = [
+"dash>=2.0.0",
+"dash-bootstrap-components>=1.0.0",   # needed for many Dash templates
+"pandas",                              # most dash apps use this
+"plotly",                              # dash uses plotly under the hood
+
+
 ]
+[tool.setuptools]
+py-modules = ["main"]
